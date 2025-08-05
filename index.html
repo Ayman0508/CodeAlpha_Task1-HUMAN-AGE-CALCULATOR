@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
+  <link rel="icon" type="image/png" sizes="100x100" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="tagline">
+      <h1>Age Calculator</h1>
+      <p>Calculate your Age and Discover how many journeys around the sun you’ve made!</p>
+      <br />
+      <div class="container">
+        <div class="card">
+          <div class="date-input-wrapper">
+            <h3 class="label">Select Your Date of Birth</h3>
+            <div class="date-input-box">
+              <input type="date" id="dob" />
+              <span class="calendar-icon"><img src="calendar.png" alt="calendar" class="calender" /></span>
+            </div>
+            <button onclick="calculateAge()">Calculate Age</button>
+          </div>
+        </div>
+
+        <div class="card age-result">
+          <div>
+            <span id="years">-</span>
+            <p>Years</p>
+          </div>
+          <div>
+            <span id="months">-</span>
+            <p>Months</p>
+          </div>
+          <div>
+            <span id="days">-</span>
+            <p>Days</p>
+          </div>
+        </div>
+
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
